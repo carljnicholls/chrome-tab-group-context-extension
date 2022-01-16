@@ -1,6 +1,6 @@
 {
     "name": "Tab Group Context Extension",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Adds a context (right click) option to modify the active tab's group options",
     "manifest_version": 3,
 
@@ -9,14 +9,10 @@
         "contextMenus",
         "tabs",
         "tabGroups",
-        "webNavigation",
-
         "activeTab"
     ],
     "content_scripts": [
     ],
-    "browser_action": {
-    },
     "icons": {
 
     },
