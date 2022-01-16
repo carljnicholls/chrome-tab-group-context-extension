@@ -4,7 +4,7 @@
     "description": "Adds a context option for adding/moving/removing the current tab to a tabgroup",
     "scripts": {
         "clean": "rimraf dist/",
-        "copy-files": "copyfiles manifest.json dist/ && copyfiles src/new-tab-form.html dist/ --flat",
+        "copy-files": "copyfiles manifest.json dist/",
 
         "prebuild": "npm run clean",
         "build": "tsc",
