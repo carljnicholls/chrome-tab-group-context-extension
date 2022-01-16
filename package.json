@@ -1,0 +1,23 @@
+{
+    "name": "chrome-tab-group-context-extension",
+    "version": "1.0.0",
+    "description": "Adds a context option for adding/moving/removing the current tab to a tabgroup",
+    "scripts": {
+        "clean": "rimraf dist/",
+        "copy-files": "copyfiles manifest.json dist/ && copyfiles src/new-tab-form.html dist/ --flat",
+
+        "prebuild": "npm run clean",
+        "build": "tsc",
+        "postbuild": "npm run copy-files"
+    },
+    "author": "Carl J Nicholls",
+    "license": "MIT",
+    "dependencies": {
+        "tslib": "2.3.1"
+    },
+    "devDependencies": {
+        "@types/chrome": "0.0.173",
+        "copyfiles": "2.4.1",
+        "rimraf": "3.0.2"
+    }
+}
